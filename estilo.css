@@ -1,23 +1,21 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, #e3f2fd, #fce4ec); /* fondo degradado */
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec); 
   color: #222;
 }
 
-.content {
-  padding: 20px;
+.content 
+{
   max-width: 900px;
   text-align: center; 
 }
 
 h1 {
   text-align: center;
-  font-size: 2.5em; /* más grande */
-  color: #0d47a1;   /* azul fuerte */
+  font-size: 2.5em; 
+  color: #0d47a1;   
   margin-bottom: 40px;
 }
 
@@ -25,18 +23,17 @@ h1 {
   margin: 40px 0;
   padding: 20px;
   border-radius: 12px;
-  background-color: #ffffffcc; /* blanco con transparencia */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ffffffcc; 
 }
 
 .top-item h2 {
   font-size: 1.8em;
-  color: #c2185b; /* rosa fuerte */
+  color: #c2185b; 
   margin-bottom: 15px;
 }
 
 .top-item p {
-  font-size: 1.2em; /* texto más grande */
+  font-size: 1.2em; 
   line-height: 1.6;
 }
 
@@ -51,7 +48,7 @@ nav#sideNav {
   top: 50px;
   left: 0;
   width: 140px;
-  background-color: #bbdefb; /* azul clarito */
+  background-color: #bbdefb;
   padding: 15px;
   border-right: 2px solid #90caf9;
   text-align: center; 
@@ -69,7 +66,6 @@ nav#sideNav a {
   text-decoration: none;
   font-size: 1.1em;
   color: #0d47a1;
-  transition: 0.2s;
 }
 
 nav#sideNav a:hover {
@@ -79,7 +75,7 @@ nav#sideNav a:hover {
 
 nav#bottomNav {
   text-align: center;
-  margin: 40px 0;
+  margin: 40px ;
 }
 
 nav#bottomNav a {
@@ -99,7 +95,7 @@ nav#bottomNav a:hover {
 }
 
 .botones button {
-  margin: 0 10px;
+  margin: 10px;
   padding: 12px 24px;
   font-size: 1.1em;
   border: none;
@@ -107,7 +103,6 @@ nav#bottomNav a:hover {
   background-color: #42a5f5;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .botones button:hover {
