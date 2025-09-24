@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Top 10 Lista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css"> 
+  <script defer src="script.js"></script> 
+</head>
+
+<body>
+  <nav id="sideNav">
+    <h3>Ir a:</h3>
+    <a href="#item10">10</a>
+    <a href="#item9">9</a>
+    <a href="#item8">8</a>
+    <a href="#item7">7</a>
+    <a href="#item6">6</a>
+    <a href="#item5">5</a>
+    <a href="#item4">4</a>
+    <a href="#item3">3</a>
+    <a href="#item2">2</a>
+    <a href="#item1">1</a>
+  </nav>
+
+  <div class="content" id="top">
+    <h1>Top 10 Cosas Hechas por el Hombre</h1>
+
+
+    <div id="topContainer">
+      <div id="item10" class="top-item">
+        <h2>#10 Papel Higienico</h2>
+        <img src="assets/papel.jpg">
+        <p>No se podia empezar el top 10 con ningun otro objeto. El top 1 de los papeles. Este mastodonte cambió el mundo a mejor. No más limpiarde con piedras.<br>  </p>
+      </div>
+      <div id="item9" class="top-item">
+        <h2>#9 La Rueda</h2>
+        <img src="assets/rueda.jpg">
+        <p>No podía faltar. Considerada por muchos la mejor invención del ser humano. Un poco sobrevalorada por lo que no podia colocarla mas arriba en el top.</p>
+      </div>
+      <div id="item8" class="top-item">
+        <h2>#8 Ganados y Cultivos</h2>
+        <img src="assets/ganado.jpg">
+        <p>Que mas se puede decir, es lo que nos separo de los monos en el paleolitico.</p>
+      </div>
+      <div id="item4" class="top-item">
+        <h2>#7 9/11</h2>
+        <img src="assets/911.jpg">
+        <p>Nada que explicar.</p>
+      </div>
+      <div id="item7" class="top-item">
+        <h2>#6  La Union Europea</h2>
+        <img src="assets/un.jpg">
+        <p>Transformó la cooperación económica en integración política, creando una de las mayores potencias económicas mundiales.</p>
+      </div>
+      <div id="item6" class="top-item">
+        <h2>#5 El descubrimiento del braquiosario</h2>
+        <img src="assets/Brachiosaurus.jpg">
+        <p>Top 10 dinosaurios mas conocidos. Top 1 mejores sauropodos. Diplodocus a tu casa.</p>
+      </div>
+      <div id="item5" class="top-item">
+        <h2>#4 La ONU</h2>
+        <img src="assets/onu.jpg">
+        <p>Que decir, como la UN pero mundial.</p>
+      </div>
+      <div id="item3" class="top-item">
+        <h2>#3 La crucificación de Jesus</h2>
+        <img src="assets/jesus.jpg">
+        <p>Jesus tuvo que morir para que pudiesmos redimirnos. Trajo tanto. Las cruzadas. El cristianimo. La persecucion a los judios y musulmanes por parte de la inquisición</p>
+      </div>
+      <div id="item2" class="top-item">
+        <h2>#2 Real Madrid</h2>
+        <img src="assets/realmadrid.jpg">
+        <p> Mayor deporte mundial. Mejor equipo mundialmente.</p>
+      </div>
+      <div id="item1" class="top-item">
+        <h2>#1 El MISMISIMO IMPERIO ESPAÑOL</h2>
+        <img src="assets/españa.png">
+        <p>MAYOR IMPERIO EN LA HISTORIA DE LA HUMANIDAD. ARRIBA ESPAÑA.</p>
+      </div>
+    </div>
+    <div class="botones">
+       <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Siguiente</button>
+    </div>
+
+    
+  
+    <div class="botones">
+      <button onclick="document.getElementById('magico').style.visibility='hidden'">Desaparece!!!</button>
+       <button onclick="document.getElementById('magico').style.visibility='visible'">Apareece de nuevo!!!</button>
+      <button onclick="desaparece('magico')">Desaparece!!! (función)</button>
+   
+    </div>
+    <div id="magico" style="margin-top:20px; padding:10px; background-color:#f2f2f2;">Soy mágico!</div>
+      <nav id="bottomNav">
+      <a href="#top">Volver al inicio</a>
+    </nav>
+  </div>
+  
+</body>
+</html>
