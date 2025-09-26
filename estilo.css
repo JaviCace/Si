@@ -108,3 +108,56 @@ nav#bottomNav a:hover {
 .botones button:hover {
   background-color: #1e88e5;
 }
+
+/* --- Ajustes para móviles --- */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;  /* contenido en columna */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  nav#sideNav {
+    position: static;   /* que ya no quede fijo */
+    width: 100%;
+    border-right: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  nav#sideNav a {
+    display: inline-block; /* en línea, como menú superior */
+    margin: 5px 10px;
+  }
+
+  nav#bottomNav {
+    margin: 20px 0;
+  }
+
+  .top-item {
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .top-item h2 {
+    font-size: 1.5em;
+  }
+
+  .top-item p {
+    font-size: 1em;
+  }
+
+  .botones button {
+    width: 100%;  /* botones grandes y adaptados */
+    margin: 8px 0;
+  }
+}
