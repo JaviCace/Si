@@ -1,14 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(135deg, #e3f2fd, #fce4ec); 
   color: #222;
 }
 
 .content {
   max-width: 900px;
-  text-align: center; 
+  margin: auto;
+  padding: 15px;
 }
 
 h1 {
@@ -44,14 +45,16 @@ h1 {
 
 nav#sideNav {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
-  width: 140px;
+  width: 180px;
+  height: 100%;
   background-color: #bbdefb;
   padding: 15px;
   border-right: 2px solid #90caf9;
   text-align: center; 
   border-radius: 0 10px 10px 0;
+  overflow-y: auto;
 }
 
 nav#sideNav h3 {
@@ -108,34 +111,34 @@ nav#bottomNav a:hover {
   background-color: #1e88e5;
 }
 
-/* --- Ajustes para móviles --- */
+/* --- Ajustes para pantallas pequeñas --- */
 @media (max-width: 768px) {
-  body {
-    flex-direction: column;  /* contenido en columna */
-    align-items: center;
-    padding: 10px;
+  nav#sideNav {
+    position: static;   /* deja de estar fijo */
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  nav#sideNav h3 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav#sideNav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 1em;
   }
 
   .content {
     max-width: 100%;
     padding: 10px;
-  }
-
-  nav#sideNav {
-    position: static;   /* que ya no quede fijo */
-    width: 100%;
-    border-right: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-
-  nav#sideNav a {
-    display: inline-block; /* en línea, como menú superior */
-    margin: 5px 10px;
-  }
-
-  nav#bottomNav {
-    margin: 20px 0;
   }
 
   .top-item {
@@ -144,19 +147,19 @@ nav#bottomNav a:hover {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .top-item h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .top-item p {
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   .botones button {
-    width: 100%;  /* botones grandes y adaptados */
-    margin: 8px 0;
+    width: 100%;
+    margin: 6px 0;
   }
 }
